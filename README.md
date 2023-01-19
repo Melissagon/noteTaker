@@ -10,3 +10,11 @@ This app allows students to keep track of their notes, for busy business people 
 ## Credits
 
 Front end code provided by MSU bootcamp. 
+
+## Deployed App
+
+https://sheltered-earth-92629.herokuapp.com/
+
+## Github
+
+https://github.com/Melissagon/noteTaker
