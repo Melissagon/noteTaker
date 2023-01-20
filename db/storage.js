@@ -3,15 +3,15 @@ const fs = require('fs');
 
 const { v1: uuidv1 } = require('uuid');
 
-const readFileAsync = util.promisify(fs.readFile);
-const writeFileAsync = util.promisify(fs.writeFile);
+const readNote = util.promisify(fs.readFile);
+const writeNote = util.promisify(fs.writeFile);
 
 class Store {
     read() {
-        return readFileAsync('db/db.json', 'utf8');
+        return readNote('db/db.json', 'utf8');
     }
     write(note) {
-        return writeFileAsync('db/db.json', JSON.stringify(note));
+        return writeNote('db/db.json', JSON.stringify(note));
     }
 
     getNotes() {
